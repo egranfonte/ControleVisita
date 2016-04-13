@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Controle de visita</title>
+        <!-- CSS externo: estilo.css-->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <!-- javascript externo: script.js-->
+        <script src="script.js"></script> 
+
+        <!-- javascript -->
+        <script >
+            //carregar apos pagina
+            window.onload = function (){
+                //chama o editar apos carregar a página
+                Editar();
+            }                       
+        </script>
+    </head>
+    <body>
+        <!-- Topo -->
+        <header>
+          <div class="topo">
+              controle de visita
+          </div>
+        </header>
+        <!-- MENU DO SITE-->
+        <nav id="menu">
+            <ul>
+              <li>
+                <a href='index.html'>Principal</a>
+                <ul >
+                  <li><a href='cad_visitas.html'>Nova Visita</a></li>
+                  <li ><a href='listar_visitas.html'>Listar Visitas</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='#'>Cadastro</a>
+                <ul >
+                  
+                  <li><a href='visitante.html'>Novo Visitante</a></li>
+                  <li><a href='funcionario.html'>Novo Funcionario</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='#'>Listar</a>
+                <ul >
+                  
+                  <li ><a href='listar_visitante.html'>Listar Visitante</a></li>
+                  <li><a href='listar_funcionario.html'>Listar Funcionario</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='config.html'>Configurações</a>
+                
+              </li>
+            </ul>
+        </nav>
+        <!-- será exibidas mensagens -->
+        <div id="mensagem">
+            
+        </div>
+        <!-- Formulario de cadastro -->
+        <fieldset class="fsCadastro"> 
+            <legend>Cadastro visitante</legend> 
+            <form name="formV" > 
+                <table class="tbCadastro">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome</label><br>
+                            <input type="text" name="nome" style="width: 400px" id="nome" placeholder="Informe o nome completo" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefone">Telefone</label><br>
+                            <input type="text" name="telefone" style="width: 400px" id="telefone" placeholder="Informe um telefone para contato" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rg">RG</label><br>
+                            <input type="text" name="rg" style="width: 400px" id="rg" placeholder="Informe o rg" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cpf">CPF</label><br>
+                            <input type="text" name="cpf" style="width: 400px" id="cpf" placeholder="Informe o cpf" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="motivo">Motivo</label><br>
+                            <select id="motivo" name="motivo" style="width: 400px" required>
+                                <option name="motivo" value="">Selecione uma opção abaixo</option>
+                                <option value="Somente Visita" name="motivo">Somente Visita</option>
+                                <option value="Entrega de documentos" name="motivo">Entrega de documentos</option>
+                                <option value="Outros" name="motivo">Outros</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sexo">Sexo</label><br>
+                            <input type="radio" name="sexo" id="masculino" value="masculino"> Masculino
+                            <input type="radio" name="sexo" id="feminino" value="feminino"> Feminino
+                            <input type="radio" name="sexo" id="outros" value="outros"> Outros
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <br>    
+                            <input name="btInserir" class="botao" type="submit" value="Cadastrar" onclick="Cadastrar('novo')">
+                            <input name="btLimpar" class="botao" type="reset" value="Limpar" >
+                            
+                        </td>
+                    </tr>                  
+                </table>
+            </form>
+        </fieldset> 
+        
+        <!-- rodape -->
+        <footer>
+			<p>&copy; Egranfonte. Todos os direitos reservados.</p>
+		</footer>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function Triangulo(base, altura) {
+				this.base = base;
+				this.altura = altura;
+			}
+
+			if (typeof(Storage) != undefined) {
+				var triangulo = new Triangulo(30, 70);
+				sessionStorage.setItem("2", JSON.stringify(triangulo));
+			}
+
+			function Exibir() {
+				var obj = JSON.parse(sessionStorage.getItem("2"));
+				alert(obj.altura);
+			}
+
+			function Inserir() {
+				var corpoTabela = document.getElementById("corpoTabela");
+				
+				var linha = corpoTabela.insertRow();
+				var nome = linha.insertCell();
+				var telefone = linha.insertCell();
+
+				nome.innerHTML = "João";
+				telefone.innerHTML = "99999 9999";
+			}
+
+		</script>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Nome
+					</th>
+					<th>
+						Telefone
+					</th>
+				</tr>
+			</thead>
+			<tbody id="corpoTabela">
+			</tbody>
+		</table>
+
+		<input type="button" value="Exibir" onclick="Exibir();"/>
+		<input type="button" value="Inserir" onclick="Inserir();"/>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

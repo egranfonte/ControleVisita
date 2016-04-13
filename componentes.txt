@@ -1,0 +1,4 @@
+Alfredo Miranda Egranfonte
+
+Cayo, vi uma atualização no ava hoje pela manhã e aproveitei a oportunidade de terminar o trabalho.
+Aqui na empresa estão utilizando ( localSotage ) mas o trabalho está como sessionStorage conforme você solicitou.

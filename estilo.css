@@ -1,0 +1,181 @@
+
+/* topo da pagina*/ 
+.topo{
+	font-size: 30px;
+	font-family: Georgia, Serif,"Times New Roman",Currier;
+	color: #4c4c4c;
+	left:150px;
+	padding: 30px;
+  /*link*/
+  text-transform: capitalize;
+}
+#principal{
+    opacity: 0.2;
+    text-align: center;
+    font-size: 60px;
+	font-family: Georgia, Serif,"Times New Roman",Currier;
+	color: #4c4c4c;
+	left:150px;
+	padding: 100px;
+}
+
+#mensagem{
+  padding: 7px;
+  font-size: 14px;
+}
+
+footer{
+  font-size: 10px;
+  font-family: Georgia, Serif,"Times New Roman",Currier;
+  color: #4c4c4c;
+  text-align: center;
+}
+
+legend{
+    font-size: 25px;
+}
+
+/* menu */ 
+nav > ul > li > ul > li {
+	display: inline-block;	
+}
+nav > ul > li > ul > li > a{
+  padding: 15px;
+  /* tamanho da fonte */
+  font-size: 12px;
+  /* espaçamento*/
+  letter-spacing: 1px;
+  /* remover aparencia do link */
+  text-decoration: none;
+  /* cor da fonte*/
+  color: #dddddd;
+  /*tudo em MAIUSCULO*/
+  text-transform: uppercase;	
+}
+nav > ul {
+	/* cor do fundo */
+	background-color:#4c4c4c;
+	/* espacamento */
+	padding: 15px;
+	/* cor cinza da fonte */
+	color: grey;
+	/* tamanho da font */
+	font-size: 19px;
+
+}
+ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+nav > ul > li{
+	display: inline-block;
+}
+nav > ul > li > ul{
+
+	display: none;
+    /* cor do fundo */
+	background-color:#4c4c4c;
+	/* espacamento */
+	padding: 15px;
+	/* cor cinza da fonte */
+	color: grey;
+	/* tamanho da font */
+	font-size: 19px;
+}
+nav > ul > li:hover > ul{
+	display: block;
+	position:absolute;
+	padding:15px;
+    background-color:#4c4c4c;
+}
+
+/*  */
+nav > ul > li > a {
+  padding: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  /* remover aparencia do link */
+  text-decoration: none;
+  color: #dddddd;
+  text-transform: uppercase;
+}
+
+
+/*Cadastro*/
+/* formulario */
+
+.fsCadastro {
+  border: 0;
+  font-family: Georgia, Serif,"Times New Roman",Currier;
+  color: #666;
+  display: block;
+}
+
+/*Tabela*/
+.tbCadastro {
+  width:100%;
+    
+}
+.tbCadastro label{
+  font-size: 18px;
+}
+
+
+/* Listar*/
+.tbListar {
+    ;
+}
+
+.tbListar > thead > tr > td{
+  border: 1px solid black;
+  text-align: center;
+  background-color: dimgrey;
+  color: #FFF;
+  padding: 5px ;
+  font-size: 16px;
+  border-width: 0px 1px 0px 1px;
+  width: 800px;
+}
+
+.tbListar > tbody > tr > td {
+  border: 1px solid black;    
+  padding: 5px;
+  text-align: left;
+  font-size: 16px;
+  border-width: 0px 0px 1px 0px;
+}
+/*Listar*/
+
+/* antecedentes muda cor*/
+.secListar tbody tr:nth-child(odd){
+  background-color: white;
+  font-size: 16px;
+  color: #4c4c4c;
+    
+}
+.secListar tbody tr:nth-child(even) {
+  background-color: dimgrey;
+  font-size: 16px;
+  color: white;
+
+}
+
+/* botões */
+.botao {
+    margin-bottom: 0.2em;
+    font-size: 20px;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+}
+.botaoCrud {    
+    background-color: #F90;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+    text-align: right;
+
+}

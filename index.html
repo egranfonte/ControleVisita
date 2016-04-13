@@ -1,0 +1,86 @@
+<!--
+    
+O trabalho consiste na implementação de, no mínimo, 4 telas sendo:
+
+02 (duas) telas de cadstro de um formulário de um objeto qualquer (os alunos serão livres para escolher o tipo da informação), contendo os seguintes elementos HTML:
+04 (quatro) inputs do tipo texto;
+01 (um) select;
+01 input do tipo radio;
+PS: os campos não poderão estar vazios.
+02 (duas) telas contendo a tabularização dos registros dos objetos cadastrados no formulário. No mínimo, estas telas deverão conter:
+01 (uma) tabela contendo as informações dos objetos, acrescida de uma coluna na última posição. Esta coluna conterá elementos (arbitrário: âncora, botões, imagens, etc) para as seguintes operações:
+Excluir: remove o registro da tabela (e também do armazenamento web);
+Editar: oferece recursos para que informações do registro possam ser alterados.
+As linhas de cada registro da tabela deverão possuir variação de cor de fundo (linhas pares de uma cor, ímpares de outra cor);
+O menu deverá ter as seguintes principais opções: Cadastrar e Listar. Quando o usuário posicionar o mouse sobre quaisquer um destes menus, será então exibida as opções sequencias de cadastro ou listagem de um determinado tipo de objeto (arbitrário, conforme mencionado acima).
+
+O trabalho valerá 70% da nota da N1 e o prazo para sua entrega será a data do dia 30/11.
+
+Os trabalhos serão apresentados em sala e o código ser auditado pelo professor e questionado ao grupo (a nota será de acordo com o grupo).
+
+
+http://guilhermemuller.com.br/pt/posts/7/html-e-css-para-formularios-sugestoes
+
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Controle de visita</title>
+        <!-- CSS externo: estilo.css-->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <!-- javascript externo: script.js-->
+        <script src="script.js"></script> 
+        
+    </head>
+    <body>
+        
+        <header>
+          <div class="topo">
+              controle de visita
+          </div>
+        </header>
+        <!-- MENU DO SITE-->
+        <nav id="menu">
+            <ul>
+              <li>
+                <a href='index.html'>Principal</a>
+                <ul >
+                  <li><a href='cad_visitas.html'>Nova Visita</a></li>
+                  <li ><a href='listar_visitas.html'>Listar Visitas</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='#'>Cadastro</a>
+                <ul >
+                  
+                  <li><a href='visitante.html'>Novo Visitante</a></li>
+                  <li><a href='funcionario.html'>Novo Funcionario</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='#'>Listar</a>
+                <ul >
+                  
+                  <li ><a href='listar_visitante.html'>Listar Visitante</a></li>
+                  <li><a href='listar_funcionario.html'>Listar Funcionario</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='config.html'>Configurações</a>
+                
+              </li>
+            </ul>
+        </nav>
+        <div id="mensagem">
+        </div>
+            <section id="principal">
+                Controle de visita
+            </section>
+      <footer>
+			<p>&copy; Egranfonte. Todos os direitos reservados.</p>
+		</footer>
+    </body>
+</html>

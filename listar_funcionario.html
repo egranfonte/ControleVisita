@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Listar funcionario</title>
+        <!-- CSS externo: estilo.css-->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <!-- javascript externo: script.js-->
+        <script src="script.js"></script> 
+
+    </head>
+    <body onload="ListarF()">
+        <!-- TOPO DO SITE-->
+        <header>
+          <div class="topo">
+              controle de visita
+          </div>
+        </header>
+        <!-- MENU DO SITE-->
+        <nav id="menu">
+            <ul>
+              <li>
+                <a href='index.html'>Principal</a>
+                <ul >
+                  <li><a href='cad_visitas.html'>Nova Visita</a></li>
+                  <li ><a href='listar_visitas.html'>Listar Visitas</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='#'>Cadastro</a>
+                <ul >
+                  
+                  <li><a href='visitante.html'>Novo Visitante</a></li>
+                  <li><a href='funcionario.html'>Novo Funcionario</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='#'>Listar</a>
+                <ul >
+                  
+                  <li ><a href='listar_visitante.html'>Listar Visitante</a></li>
+                  <li><a href='listar_funcionario.html'>Listar Funcionario</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href='config.html'>Configurações</a>
+                
+              </li>
+            </ul>
+        </nav>
+        <!-- CAMPO DE MENSAGEM-->
+        <div id="mensagem">
+            
+        </div>
+        <section class="secListar">
+            <form action=""> 
+                <!-- listar -->
+                
+                <table class="tbListar"  cellspacing="0px">
+
+                    <thead id="editarTitulo">
+                        
+                    </thead>
+                    <tbody id="editarListar">
+                         
+                    </tbody>
+
+                </table>
+
+            </form>
+            <form action=""> 
+                <!-- listar -->
+                
+                <table class="tbListar"  cellspacing="0px">
+
+                    <thead id="titulo">
+                        
+                    </thead>
+                    <tbody id="listar">
+                        
+                    </tbody>
+
+                </table>
+
+            </form>
+        </section>
+        <footer>
+			<p>&copy; Egranfonte. Todos os direitos reservados.</p>
+		</footer>
+        
+    </body>
+</html>
