@@ -7,9 +7,9 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
 
         <!-- javascript externo: script.js-->
-        <script src="script.js"></script> 
+        <script src="js/script.js"></script>
 
-     
+
     </head>
     <body>
         <!-- Topo -->
@@ -31,7 +31,7 @@
               <li>
                 <a href='#'>Cadastro</a>
                 <ul >
-                  
+
                   <li><a href='visitante.html'>Novo Visitante</a></li>
                   <li><a href='funcionario.html'>Novo Funcionario</a></li>
                 </ul>
@@ -39,25 +39,25 @@
               <li>
                 <a href='#'>Listar</a>
                 <ul >
-                  
+
                   <li ><a href='listar_visitante.html'>Listar Visitante</a></li>
                   <li><a href='listar_funcionario.html'>Listar Funcionario</a></li>
                 </ul>
               </li>
               <li>
                 <a href='config.html'>Configurações</a>
-                
+
               </li>
             </ul>
         </nav>
         <!-- será exibidas mensagens -->
         <div id="mensagem">
-            
+
         </div>
         <!-- Formulario de cadastro -->
-        <fieldset class="fsCadastro"> 
-            <legend>Cadastro de visitas</legend> 
-            <form name="formVF" > 
+        <fieldset class="fsCadastro">
+            <legend>Cadastro de visitas</legend>
+            <form name="formVF" >
                 <table class="tbCadastro">
                     <tr>
                         <td>
@@ -71,7 +71,7 @@
                             <input type="text" name="nomeFuncionario" style="width: 400px" id="nomeFuncionario" placeholder="Nome do Funcionário conforme cadastro" required="required">
                         </td>
                     </tr>
-         
+
                     <tr>
                         <td>
                             <label for="motivo">Motivo</label><br>
@@ -85,21 +85,21 @@
                     </tr>
                     <tr>
                         <td >
-                            <br>    
+                            <br>
                             <input name="btInserir" class="botao" type="submit" value="Cadastrar" onclick="CadastrarVF('novo')">
                             <input name="btLimpar" class="botao" type="reset" value="Limpar" >
-                            
+
                         </td>
-                    </tr>                  
+                    </tr>
                 </table>
             </form>
-        </fieldset> 
-        
+        </fieldset>
+
         <!-- rodape -->
         <footer>
 			<p>&copy; Egranfonte. Todos os direitos reservados.</p>
 		</footer>
-        
-        
+
+
     </body>
 </html>
