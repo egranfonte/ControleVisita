@@ -1,6 +1,5 @@
-# ControleVisita
-## Controle de Visita com WebStorage
-### Sobre
+# Controle de Visita com WebStorage
+## Sobre
 <p>
     Realizar o controle de visita de um estabelecimento.
 </p>
@@ -19,7 +18,8 @@
 + **Data**	- Data atual 
 + **Apagar WebStorage** - Apagar todos os registros do Web Storage local
 
-### Linguagens utilizadas
+## Tecnologia utilizada 
+### Linguagens
 + HTML5 
 + CSS3 
 + JS
